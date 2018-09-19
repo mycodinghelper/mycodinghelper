@@ -71,6 +71,51 @@
                 
             }
             
+            #div-example {
+                background-color: yellow;
+            }
+            
+            #overflow-example {
+                height: 200px;
+                width: 400px;
+                background-color: rgb(97, 224, 224); 
+                color: rgb(255, 102, 0);
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            #margin-example {
+                margin: 20px 0px 30px 10px;
+            }
+            #border-example {
+                border: 5px solid rgb(102, 0, 255);
+            }
+            
+            #padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}
+            
+            #fixed-position-example {
+                border: 4px ridge rgb(230, 37, 37);
+                background-color: rgb(49, 66, 50);
+                text-decoration: none;
+                color: rgb(97, 147, 255);
+                font-weight: bold;
+                position: fixed;
+                right: 0px;
+                top: 0px;
+                padding: 3px;
+            }
+            
+            #z-index-example1 {
+                position: relative;
+                z-index: 2;
+                background-color: red;
+            }
+            
+            #z-index-example2 {
+            position: relative;
+            z-index: 1;
+            bottom: 23px;
+            background-color: blue;
+            }
         </style>
     </head>
     <body>
@@ -212,6 +257,19 @@
 <div id="div-example"><p>html: div id="div-example", css: #div-example {background-color: yellow;}</p></div>
 
 <div id="overflow-example"><p>#overflow-example {height: 200px; width: 400px; background-color: rgb(97, 224, 224); color: rgb(255, 102, 0); overflow-y: auto; overflow-x: hidden;}</p><br><br><br><br><br><br><br><br><br><img src="https://www.kasandbox.org/programming-images/seasonal/snownoes.png" width="300px"></div>
+
+<p id="margin-example">#margin-example {margin: 20px 0px 30px 10px;}</p>
+
+<p id="border-example">#border-example {border: 5px solid rgb(102, 0, 255);}</p>
+
+<p id="padding-example">#padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}</p>
+
+<a href="#internal-link-example" id="fixed-position-example">To the top</a>
+
+<p>to the top code: #fixed-position-example {border: 4px ridge rgb(230, 37, 37); background-color: rgb(49, 66, 50); text-decoration: none; color: rgb(97, 147, 255); font-weight: bold; position: fixed; right: 0px; top: 0px; padding: 3px;}</p>
+
+<p id="z-index-example1">#z-index-example1 {position: relative; z-index: 2; background-color: red;}</p>
+<p id="z-index-example2">#z-index-example2 {position: relative; z-index: 1; bottom: 23px; background-color: blue;}</p>
 
 <!-- End of CSS -->
 
