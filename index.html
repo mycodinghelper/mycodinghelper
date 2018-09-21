@@ -90,6 +90,11 @@
                 border: 5px solid rgb(102, 0, 255);
             }
             
+            #select-sided-border-example {
+                border-top: 3px ridge yellow;
+                border-bottom: 3px ridge yellow;
+            }
+            
             #padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}
             
             #fixed-position-example {
@@ -121,7 +126,9 @@
                 float: left;
                 width: 100px;
                 border: 3px ridge rgb(176, 51, 176);
+                background-color: black;
             }
+            
             
         </style>
     </head>
@@ -269,6 +276,8 @@
 
 <p id="border-example">#border-example {border: 5px solid rgb(102, 0, 255);}</p>
 
+<p id="select-sided-border-example">#select-sided-border-example {border-top: 3px ridge yellow; border-bottom: 3px ridge yellow;}</p>
+
 <p id="padding-example">#padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}</p>
 
 <a href="#internal-link-example" id="fixed-position-example">To the top</a>
@@ -278,7 +287,7 @@
 <p id="z-index-example1">#z-index-example1 {position: relative; z-index: 2; background-color: red;}</p>
 <p id="z-index-example2">#z-index-example2 {position: relative; z-index: 1; bottom: 23px; background-color: blue;}</p>
 
-<p>image code: #float-example {float: left; width="100px" border: 3px ridge rgb(176, 51, 176);}</p>
+<p>image code: #float-example {float: left; width="100px" border: 3px ridge rgb(176, 51, 176); background-color: black;}</p>
 
 <img src="https://www.kasandbox.org/programming-images/avatars/piceratops-seed.png" id="float-example">
 
