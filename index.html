@@ -146,6 +146,22 @@
                 
             }
             
+            .element-only-class-example {
+                color: rgb(255, 85, 0);
+            }
+            
+            p.element-only-class-example {
+                background-color: rgb(64, 15, 64);
+            }
+            
+            div p .decendent-selector-example {
+                color: white;
+            }
+            
+            .decendent-selector-example {
+                background-color: grey; color: rgb(14, 235, 40);
+            }
+            
         </style>
     </head>
     <body>
@@ -342,6 +358,10 @@
 <p>filler filler filler filler filler filler filler filler filler filler filler filler filler filler</p>
 
 <p class="multiple-classes-1 multiple-classes-2">html code: p class="multiple-classes-1 multiple-classes-2", css code: .multiple-classes-1 {color: rgb(255, 223, 97);} .multiple-classes-2 {background-color: rgb(3, 84, 0);}</p>
+
+<p class="element-only-class-example">html code: p class="element-only-class-example"<br>strong class="element-only-class-example"</p><p><strong class="element-only-class-example">css code: .element-only-class-example {color: rgb(255, 85, 0);}<br>p.element-only-class-example {background-color: rgb(64, 15, 64);</strong></p>
+
+<div><p class="decendent-selector-example"><strong class="decendent-selector-example">html code: &lt;div&gt;&lt;p&gt;&lt;strong class="decendent-selector-example"&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt; </strong>css code: div p .decendent-selecor-example {color: white;}<br>.decendent-selector-example {background-color: grey; color: rgb(14, 235, 40);}</p></div>
 
 <!-- End of CSS -->
 
