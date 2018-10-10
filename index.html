@@ -68,6 +68,10 @@
                 text-decoration: none;
             }
             
+            #overline-example {
+                text-decoration: overline;
+            }
+            
             #span-example {
                 color: rgb(255, 0, 0);
                 
@@ -100,6 +104,13 @@
             #fitted-border-example {
                 border: 4px dashed rgb(255, 85, 0);
                 width: 424px;
+            }
+            
+            #rounded-border-example {border-radius: 10px; border: 4px ridge white;}
+            
+            #specific-rounded-border-example {
+                border-radius: 10px 0px 15px 5px;
+                border: 4px solid red;
             }
             
             .table-border-example {
@@ -344,6 +355,8 @@
 
 <a href="https://www.google.com" id="no-underline-link-example">#no-underline-link-example {text-decoration: none;}</a>
 
+<p id="overline-example">#overline-example {text-decoration: overline;}</p>
+
 <p>html code:<span id="span-example"> span id="span-example",</span> css code: #span-example {color: rgb(255, 0, 0);}</p>
 
 <div id="div-example"><p>html code: div id="div-example", css code: #div-example {background-color: yellow;}</p></div>
@@ -357,6 +370,10 @@
 <p id="select-sided-border-example">#select-sided-border-example {border-top: 3px ridge yellow; border-left: 5px double white;}</p>
 
 <p id="fitted-border-example">#fitted-border-example {border: 4px dashed rgb(255, 85, 0); width: 424px;</p>
+
+<p id="rounded-border-example">#rounded-border-example {border-radius: 10px; border: 4px ridge white;}</p>
+
+<p id="specific-rounded-border-example">#specific-rounded-border-example {border-radius: 10px 0px 15px 5px; border: 4px solid red;}</p>
 
 <table class="table-border-example">
 <thead>
