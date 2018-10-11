@@ -1,140 +1,467 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Uses for html/css</title>
-<link rel="icon" href="https://mycodinghelper.github.io/Favicon.ico">
-<style>
-
+    <head>
+        <meta charset="utf-8">
+        <title>My coding stuff</title>
+        <link rel="stylesheet" type="text/css" href="https://mycodinghelper.github.io/stylesheet-example.css">
+        <link rel="icon" href="https://mycodinghelper.github.io/Favicon.ico">
+        <style>
+            
+            h3 {
+                color: red;
+            }
+            
+            h4 {
+                color: rgb(23, 156, 189);
+            }
+            
             body {
                 background-color: rgb(163, 235, 159);
-                border: 7px ridge rgb(209, 34, 34);
-                margin: 0px 0px 0px 0px;
             }
             
-            #internal-link-use {
-                background-color: rgb(255, 132, 0);
-                margin: 0px 0px 0px 0px;
+            #id-example {
+                background-color: rgb(126, 172, 232);
+            }
+            
+            .class-example {
+                background-color: rgb(153, 97, 81);
+            }
+            
+            #font-family-example {
+                font-family: sans-serif;
+            }
+            
+            #precise-font-family-example {
+                font-family: "helvetica";
+            }
+            
+            #font-size-example {
+                font-size: 15px;
+                
+            }
+            
+            #bold-example {
+                font-weight: bold;
+            }
+            
+            #italic-example {
+                font-style: italic;
+            }
+            
+            #all-font-type-example {
+                font: italic bold 17.5px "helvetica";
+            }
+            
+            .line-height-example {
+                line-height: 1px;
+            }
+            
+            #text-align-example {
                 text-align: center;
-                border: 7px ridge rgb(209, 34, 34);
-                right: 0px;
+            }
+            
+            #underline-example {
+                text-decoration: underline;
+            }
+            
+            #no-underline-link-example {
+                text-decoration: none;
+            }
+            
+            #overline-example {
+                text-decoration: overline;
+            }
+            
+            #span-example {
+                color: rgb(255, 0, 0);
+                
+            }
+            
+            #div-example {
+                background-color: yellow;
+            }
+            
+            #overflow-example {
+                height: 200px;
+                width: 400px;
+                background-color: rgb(97, 224, 224); 
+                color: rgb(255, 102, 0);
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            #margin-example {
+                margin: 20px 0px 30px 10px;
+            }
+            #border-example {
+                border: 5px solid rgb(102, 0, 255);
+            }
+            
+            #select-sided-border-example {
+                border-top: 5px ridge yellow;
+                border-left: 5px double white;
+            }
+            
+            #fitted-border-example {
+                border: 4px dashed rgb(255, 85, 0);
+                width: 424px;
+            }
+            
+            #rounded-border-example {border-radius: 10px; border: 4px ridge white;}
+            
+            #specific-rounded-border-example {
+                border-radius: 10px 0px 15px 5px;
+                border: 4px solid red;
+            }
+            
+            .table-border-example {
+                border: 2px solid rgb(15, 94, 70);
+            }
+            
+            #border-image-example {
+                border-image: url(https://lh3.googleusercontent.com/gaMNlMrTFp5In-AViBTeX6ULa-a61BTwUsmDVdngqUmazjb9RZuXMf4hmkeSZ68ux0N_IooZ1GReSGKeGJHMhkMJYF4xxyNevTf_l7rw_-ijW9MPDUnHU-WhuMlGTWfTd_Z7shgscEQ9b6ksYC8VMKwoGuA9f1W5Yd2z0HfOjJy4sxOWY5-Rpag3dWaZyh2k4XdIGKWIZnIvRgFhLnt_3dKYzIN5UWnYhAa_WsMrryYhQfWRl2Ergw-38EnaIvERxz135BAqua1Pw3TvHXGRy6yPa6nwuvncWwRC-GHW9L4WEHYun2Tt2xeIgfXtPSYSD1H4qEuPW7_proW0B2jR7x-gz6AnicxBuXXUWk3iBIpChuJ-m2EsxFR7sB-B3Rro-uooeslESpldxiGsDbEdrtu6EAU4kjHCynRJlXYxREM4OQl0OKdTRveQPhBWEwSZzcmhbfpOvJjRi9A1wGThE-PSYXZ7Db5Dj3vkdlZqaypcTLRn8zJ7cV4r3lzGvwF2neFGfDYVop5glFjt3853h6tRgk3YMfL7QyDQQwp3FxXkMMMHVEnjeGa2C91kl2dz6BnB4nWw-1IdKbD-GKpf_jXkoYsNE16lcH2uupww4Jj4NORmFMxAsN9FsxrIvgkOM5RH7iPvPyLPzIFc-UFo8ftF0HGhijMJJmAK27YPaaLeX0a429OgfcQQ=s100-no);
+                border: 7px solid transparent;
+            }
+            
+            #padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}
+            
+            #fixed-position-example {
+                border: 4px ridge rgb(230, 37, 37);
+                background-color: rgb(49, 66, 50);
+                text-decoration: none;
+                color: rgb(97, 147, 255);
+                font-weight: bold;
                 position: fixed;
-                left: 0px;
+                right: 0px;
                 top: 0px;
-                cursor: url(https://mycodinghelper.github.io/cursor2pointer.png), auto;
+                padding: 3px;
             }
             
-            body {
-                text-align: center;
+            #z-index-example1 {
+                position: relative;
+                z-index: 2;
+                background-color: red;
             }
             
-            #h1 {
-                margin-top: 50px;
+            #z-index-example2 {
+            position: relative;
+            z-index: 1;
+            bottom: 23px;
+            background-color: blue;
+            }
+            
+            #float-example {
+                float: left;
+                width: 100px;
+                border: 3px ridge rgb(176, 51, 176);
+                background-color: black;
+            }
+            
+            .multiple-classes-1 {
+                color: rgb(255, 223, 97);
+            }
+            .multiple-classes-2 {
+                background-color: rgb(3, 84, 0);
+                
+            }
+            
+            .element-only-class-example {
+                color: rgb(255, 85, 0);
+            }
+            
+            p.element-only-class-example {
+                background-color: rgb(64, 15, 64);
+            }
+            
+            div p .decendent-selector-example {
+                color: white;
+            }
+            
+            .decendent-selector-example {
+                background-color: grey; color: rgb(14, 235, 40);
+            }
+            
+            h5, h6 {
+                color: rgb(97, 17, 97);
+                font-family: "sans";
             }
             
             a:link {
-                color: black;
-                text-decoration: none;
-                cursor: url(https://mycodinghelper.github.io/cursor2pointer.png), auto;
+                color: rgb(39, 177, 179);
             }
-            
+          
             a:visited {
-                color: black;
-                text-decoration: none;
-                cursor: url(https://mycodinghelper.github.io/cursor2pointer.png), auto;
+                color: rgb(255, 0, 72);
             }
             
-            body {
-                cursor: url(https://mycodinghelper.github.io/cursor2.png), auto;
+            a:hover {
+                border: 2px solid rgb(250, 64, 8);
+            }
+            a:active {
+                color: rgb(255, 255, 255);
             }
             
-            h1,h2,h3, h4, h5, h6, p {
-                cursor: url(https://mycodinghelper.github.io/cursor2-text.png), auto;
-                display: inline-block;
+            a:focus {
+                background-color: rgb(247, 129, 223);
+            }
+            #specificity-example-1 {
+                color: blue;
             }
             
-            a {
-                display: inline-block;
+            .specificity-example-2 {
+                color: yellow;
             }
             
-</style>
-</head>
-<body>
-
-<a href="https://mycodinghelper.github.io"><h1 id="internal-link-use">Uses</h1></a>
-
-<div id="internal-link-use1">
-
-<h1 id="h1" class="internal-link-use1">HTML</h1>
+            #cursor-example {
+                cursor: wait;
+            }
+            
+            #custom-cursor-example {
+                cursor: url(https://lh3.googleusercontent.com/BlETOnm98yPP5xCHbkFiFREFHNTQqucd_kFkfkYNKKnNohHvvnM7NTlLFq3rAukha0q-JEkouEgvfZnHkrhrzGIaps33RSJOuDV-_NiaPwSfn_cYbp5ayvFkYo4idwDkm-yb1G_jEwpY1zbrNtunux_oGFV-ADsdBVkK5qFqxj5OXMt3Qyw5GDkLgf5cdBHCK91go-7TkV8gT3zwbSWT8gi5tgFkY3UhyTM_X8E0FOU7uLOYBYDlTrEiIuIgqPEWOaj5MbH0j1j871KiLY65x4UsadJDzkpjT3mbfXgoMfDu4p3bE_I9a3Ck2MZq76RxKTH4iDHNwyz2hA0E0BXh2tsoq3mBQEH0h5ywIEDpNqMMQQ1HD33jfqX6TxZT48R6dGso6s4yGruWrMhn4CEwbvuNhOQYEO_r9e8WsIurKqU9bZ7Uiy3YdEtzgKG-sXHV5wJZQv8G0sr-utR9Cu8EzoYBHNdC2Yh-2eE8MAM0yS_15zKp-7igRo9RNhA_0TUkDgb8c4DQ4nC91VfylAA-elZKZtxDySI9U1ZCou1F8q42HJdD8A62CODQ2tlLJ3GMILtXQMM-T_JLhKzzg7gaTk8o9-E3pC5WVyh-yN9dSS-7sUqDBtUUF4bPWgg1WN2CbcJKXzDre_fBkw8hQ5Hzy_2Gp2LoMeSFB1c=s25-no), auto;
+            }
+            
+            #gradient-example {
+                background-image: linear-gradient(to right, red, yellow, orange);
+                width: 634px;
+            }
+            
+        </style>
+    </head>
+    <body>
     
-</div>
+<!-- Start of HTML
+-->
+    
+<h1 id="internal-link-example">HTML:</h1>
 
-<h1 id="h2">h1 tag (header 1): making a header, or making a word or sentence stand out.</h1><br>
+<h1>h1</h1>
 
-<h2>h2 tag (header 2): making a header, or making a word or sentence stand out.</h2><br>
+<h2>h2</h2>
 
-<h3>h3 tag (header 3): making a header, or making a word or sentence stand out less.</h3><br>
+<h3>h3</h3>
 
-<h4>h4 tag (header 4): making a header, or making a word or sentence stand out less.</h4><br>
+<h4>h4</h4>
 
-<h5>h5 tag (header 5): making a paragraph, or making some text small.</h5><br>
+<h5>h5</h5>
 
-<h6>h6 tag (header 6): making a paragraph, or making some text small.</h6><br>
+<h6>h6</h6>
 
-<p>p tag (paragraph): making a paragraph or sentance.</p><br>
-
-<p>br tag (break): making a break between two tags.</p><br>
-
-<p>strong tag (strong, aka bold): making a sentance or word stand out.</p><br>
-
-<p>em tag (emphasis, aka italics): making a sentance or word stand out.</p><br>
-
-<p>ol, ul, and li tags (list tags): making a ordered list or unordered list.</p><br>
-
-<p>img tag (image): making an image.</p><br>
-
-<a href="https://mycodinghelper.github.io">a tag (external link): making it easier for users of a webpage to access another page or website.</a>
+<p>p</p>
 
 <br>
 
-<a href="#internal-link-use1">a tag (internal link): making it easier for users of a website to go from a part of a page to another part of the same page.</a><br>
+<p>^break= br</p>
 
-<p>table, thead, tbody, tr, td, and th tags (table tags): making a table to contain data.</p><br>
+<p><strong>strong</strong>, <em>em</em></p>
 
-<p>&ampamp, &lt, and &gt symbols (ampersand and angle brackets): Making a tag viewable in a paragraph or header tag.</p><br>
+<ol>
+<li>numbered list: ol</li>
+<li>list item: li</li>
+</ol>
+
+<ul>
+<li>dot list: ul</li>
+<li>list item: li</li>
+</ul>
+
+<img src="https://lh3.googleusercontent.com/gaMNlMrTFp5In-AViBTeX6ULa-a61BTwUsmDVdngqUmazjb9RZuXMf4hmkeSZ68ux0N_IooZ1GReSGKeGJHMhkMJYF4xxyNevTf_l7rw_-ijW9MPDUnHU-WhuMlGTWfTd_Z7shgscEQ9b6ksYC8VMKwoGuA9f1W5Yd2z0HfOjJy4sxOWY5-Rpag3dWaZyh2k4XdIGKWIZnIvRgFhLnt_3dKYzIN5UWnYhAa_WsMrryYhQfWRl2Ergw-38EnaIvERxz135BAqua1Pw3TvHXGRy6yPa6nwuvncWwRC-GHW9L4WEHYun2Tt2xeIgfXtPSYSD1H4qEuPW7_proW0B2jR7x-gz6AnicxBuXXUWk3iBIpChuJ-m2EsxFR7sB-B3Rro-uooeslESpldxiGsDbEdrtu6EAU4kjHCynRJlXYxREM4OQl0OKdTRveQPhBWEwSZzcmhbfpOvJjRi9A1wGThE-PSYXZ7Db5Dj3vkdlZqaypcTLRn8zJ7cV4r3lzGvwF2neFGfDYVop5glFjt3853h6tRgk3YMfL7QyDQQwp3FxXkMMMHVEnjeGa2C91kl2dz6BnB4nWw-1IdKbD-GKpf_jXkoYsNE16lcH2uupww4Jj4NORmFMxAsN9FsxrIvgkOM5RH7iPvPyLPzIFc-UFo8ftF0HGhijMJJmAK27YPaaLeX0a429OgfcQQ=s100-no" alt="img">
+
+<p>^image code: img src="" alt="img"</p>
+
+<a href="https://www.google.com">link code: a href="https://google.com"</a>
+
+<br>
+
+<a href="#internal-link-example">internal link code: a href="#internal-link-example"</a>
+
+<br>
+
+<table>
+<thead>
+    <tr>
+        <th>th</th>
+        <th>th</th>
+        <th>th</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>td</td>
+        <td>td</td>
+        <td>td</td>
+    </tr>
+    <tr>
+        <td>td</td>
+        <td>td</td>
+        <td>td</td>
+    </tr>
+</tbody>
+</table>
+
+<p>^code: <br>
+&lt;table&gt; <br>
+&lt;thead&gt; <br>
+&lt;tr&gt; <br>
+&lt;th&gt;th&lt;/th&gt; <br>
+&lt;th&gt;th&lt;/th&gt; <br>
+&lt;th&gt;th&lt;th&gt; <br>
+&lt;tr&gt; <br>
+&lt;thead&gt; <br>
+&lt;tbody&gt; <br>
+&lt;tr&gt; <br>
+&lt;td&gt;td&lt;td&gt; <br>
+&lt;td&gt;td&lt;td&gt; <br>
+&lt;td&gt;td&lt;td&gt; <br>
+&lt;tr&gt; <br>
+&lt;tr&gt; <br>
+&lt;td&gt;td&lt;td&gt; <br>
+&lt;td&gt;td&lt;td&gt; <br>
+&lt;td&gt;td&lt;td&gt; <br>
+&lt;tr&gt; <br>
+&lt;tbody&gt; <br>
+&lt;table&gt;</p>
+
+<p>show special characters code: &lt; = &amp;lt; &gt; = &ampgt; &amp; = &amp;amp;</p>
 
 <!-- End of HTML -->
 
-<h1>CSS</h1><br>
+<h1 id="pseudo-class-examples">CSS:</h1>
 
 <!-- Start of CSS -->
 
-<p>color property (text color): changing the color of the text.</p><br>
+<h3>text color code: h3 {color: red;}</h3>
 
-<p>background-color property (backgound color): changing the color of the background.</p><br>
+<h4>text color code: h4 {color: rgb(23, 156, 189);}</h4>
 
-<p>font-family property (font): changing the font of the text.</p>
+<p>background code: body {background-color: rgb(163, 235, 159);}</p>
 
-<p>font-family property (specific font with ""): changing the font of the text specifically.</p><br>
+<p id="id-example">background color code (using id): #id-example {background-color: rgb(126, 172, 232);}</p>
 
-<p>font-size property (size of font): changing the size of the font, to make it smaller, or stand out more.</p><br>
+<p class="class-example">background color code (using class): .class-example {background-color: rgb(153, 97, 81);}</p>
 
-<a href="https://mycodinghelper.github.io/nothing.txt">font-weight property (bold): making a sentence or word stand out.</a><br>
+<p id="font-family-example">#font-family-example {font-family: sans-serif;}</p>
 
-<p>font-style property (italics): making a sentence or word stand out.</p><br>
+<p id="precise-font-family-example">#precise-font-family-example {font-family: "Helvetica";}</p>
 
-<p>line-height property (space between lines): making paragraphs smaller, and making them take up less space.</p><br>
+<p id="font-size-example">#font-size-example {font-size: 15px;}</p>
 
-<p>text-align property (alignment of text): making text centered, to the left, or to the right.</p><br>
+<p id="bold-example">#bold-example {font-weight: bold;}</p>
 
-<p>text-decoration property (text decoration): putting a line on top, through, or below the text.</p><br>
+<p id="italic-example">#italic-example {font-style: italic;}</p>
 
-<p>span tag (span): selecting a specific part of a text to change.</p><br>
+<p id="all-font-type-example">#all-font-type-example {font: italic bold 17.5px "helvetica";}</p>
 
-<p>div tag (divide): selecting a specific part of the body to change.</p><br>
+<p class="line-height-example">.line-height-example {line-height: 1px;}</p>
 
-<p>overflow property (overflow): making a section smaller, and making users able to scroll through the section.</p><br>
+<p class="line-height-example">.line-height-example {line-height: 1px;}</p>
 
-<p>margin property (margin): making a section be closer or farther from the closest parts of the page.</p><br>
+<p id="text-align-example">#text-align-center {text-align: center;}</p>
 
-</body>
+<p id="underline-example">#underline-example {text-decoration: underline;}</p>
+
+<a href="https://www.google.com" id="no-underline-link-example">#no-underline-link-example {text-decoration: none;}</a>
+
+<p id="overline-example">#overline-example {text-decoration: overline;}</p>
+
+<p>html code:<span id="span-example"> span id="span-example",</span> css code: #span-example {color: rgb(255, 0, 0);}</p>
+
+<div id="div-example"><p>html code: div id="div-example", css code: #div-example {background-color: yellow;}</p></div>
+
+<div id="overflow-example"><p>#overflow-example {height: 200px; width: 400px; background-color: rgb(97, 224, 224); color: rgb(255, 102, 0); overflow-y: auto; overflow-x: hidden;}</p><br><br><br><br><br><br><br><br><br><img src="https://www.kasandbox.org/programming-images/seasonal/snownoes.png" width="300px"></div>
+
+<p id="margin-example">#margin-example {margin: 20px 0px 30px 10px;}</p>
+
+<p id="border-example">#border-example {border: 5px solid rgb(102, 0, 255);}</p>
+
+<p id="select-sided-border-example">#select-sided-border-example {border-top: 3px ridge yellow; border-left: 5px double white;}</p>
+
+<p id="fitted-border-example">#fitted-border-example {border: 4px dashed rgb(255, 85, 0); width: 424px;</p>
+
+<p id="rounded-border-example">#rounded-border-example {border-radius: 10px; border: 4px ridge white;}</p>
+
+<p id="specific-rounded-border-example">#specific-rounded-border-example {border-radius: 10px 0px 15px 5px; border: 4px solid red;}</p>
+
+<table class="table-border-example">
+<thead>
+    <tr>
+        <th class="table-border-example">th</th>
+        <th class="table-border-example">th</th>
+        <th class="table-border-example">th</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td class="table-border-example">td</td>
+        <td class="table-border-example">td</td>
+        <td class="table-border-example">td</td>
+    </tr>
+    <tr>
+        <td class="table-border-example">td</td>
+        <td class="table-border-example">td</td>
+        <td class="table-border-example">td</td>
+    </tr>
+</tbody>
+</table>
+
+<p>^table code: .table-border-example {border: 2px solid rgb(15, 94, 70);}, html table code: th class="table-border-example", td class="table-border-example", table class="table-border-example"</p>
+
+<p id="border-image-example">hi</p>
+
+<p id="padding-example">#padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}</p>
+
+<a href="#internal-link-example" id="fixed-position-example">To the top</a>
+
+<p>to the top code: #fixed-position-example {border: 4px ridge rgb(230, 37, 37); background-color: rgb(49, 66, 50); text-decoration: none; color: rgb(97, 147, 255); font-weight: bold; position: fixed; right: 0px; top: 0px; padding: 3px;}</p>
+
+<p id="z-index-example1">#z-index-example1 {position: relative; z-index: 2; background-color: red;}</p>
+<p id="z-index-example2">#z-index-example2 {position: relative; z-index: 1; bottom: 23px; background-color: blue;}</p>
+
+<p>image code: #float-example {float: left; width="100px" border: 3px ridge rgb(176, 51, 176); background-color: black;}</p>
+
+<img src="https://www.kasandbox.org/programming-images/avatars/piceratops-seed.png" id="float-example">
+
+<p>filler filler filler filler filler filler filler filler filler filler filler</p>
+
+<p>filler filler filler filler filler filler filler filler filler filler filler</p>
+
+<p>filler filler filler filler filler filler filler filler filler filler filler</p>
+
+<p>filler filler filler filler filler filler filler filler filler filler filler filler filler filler</p>
+
+<p class="multiple-classes-1 multiple-classes-2">html code: p class="multiple-classes-1 multiple-classes-2", css code: .multiple-classes-1 {color: rgb(255, 223, 97);} .multiple-classes-2 {background-color: rgb(3, 84, 0);}</p>
+
+<p class="element-only-class-example">html code: p class="element-only-class-example"<br>strong class="element-only-class-example"</p><p><strong class="element-only-class-example">css code: .element-only-class-example {color: rgb(255, 85, 0);}<br>p.element-only-class-example {background-color: rgb(64, 15, 64);</strong></p>
+
+<div><p class="decendent-selector-example"><strong class="decendent-selector-example">html code: &lt;div&gt;&lt;p&gt;&lt;strong class="decendent-selector-example"&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt; </strong>css code: div p .decendent-selecor-example {color: white;}<br>.decendent-selector-example {background-color: grey; color: rgb(14, 235, 40);}</p></div>
+
+<h5>h5, h6 {color: rgb(97, 17, 97); font-family: "sans";}</h5>
+
+<h6>h5, h6 {color: rgb(97, 17, 97); font-family: "sans";}</h6>
+
+<a href="#pseudo-class-examples">a:link {color: rgb(39, 177, 179);}</a>
+<br>
+<a href="#pseudo-class-examples">a:visited {color: rgb(255, 0, 72);</a>
+<br>
+<a href="#pseudo-class-examples">a:hover {border: 2px solid rgb(250, 64, 8);}</a>
+<br>
+<a href="#pseudo-class-examples">a:active {color: rgb(255, 255, 255);}</a>
+<br>
+<a href="https://mycodinghelper.github.io/uses.html">a:focus {background-color: rgb(247, 129, 223);}</a>
+
+<h3 id="specificity-example-1" class="specificity-example-2">specificity= id beats class beats tag<br>css code: #specificity-example-1 {color: blue;}<br>.specificity-example-2 {color: yellow;}<br>h3 {color: red;}</h3>
+
+<p style="background-color: black; color: rgb(0, 255, 242);">p style="background-color: black; color: rgb(0, 255, 242);"</p>
+
+<p id="stylesheet-example">css code: (in head tag) link rel="stylesheet" type="text/css" href="mycodinghelper.github.io/stylesheet-example.css"<br>html code: p id="stylesheet-example"</p>
+
+<p id="cursor-example">#cursor-example {cursor: wait;}</p>
+
+<p id="custom-cursor-example">#custom-cursor-example {cursor: url( ), auto;}</p>
+
+<p>favicon code: (in head tag) link rel="icon" href=""</p>
+
+<p id="gradient-example">#gradient-example {background-image: linear-gradient(to right, red, yellow, orange); width: 634px;}</p>
+
+<!-- End of CSS -->
+
+    </body>
 </html>
