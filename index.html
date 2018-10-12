@@ -117,6 +117,13 @@
                 border: 2px solid rgb(15, 94, 70);
             }
             
+            #border-image-example {
+                border: 10px solid transparent;
+                padding: 10px;
+                border-image: url(https://lh3.googleusercontent.com/faZngKj8m23TKaNbdHtvUSXvOb3OudpzxQkfKXO8uHDsqIgXV0qxN5glNhhf2_0dmq2Q9_GbcBoLCPIAJEryBygF7WFIhInBvw4sCqmktiVd76QJynzGYwthOr5SkBFMRA1Oo9ou9kSW_PMR7DhefQ080qX7qTYYtsA38X6MWQG0_pjowZNVPIqZykX2DLJGJ56GoDqFsRFLzf7ao2-RwjdeKAKHRhYMi8iys_fQLQRo8cvjwDb1O3f6BkkkovHYR7HBwi2DHdTay6loHu_oKGHDejKm80mffkmuux6xt2RKtNkHaRk_oy5UciyutRk4IkE03gavZb5UzFFvjG-tv6LSrvEC5yojjqDGQS2MENbFrPm16RXgNhqsypUdeK1nSyUpPzHS0CYGk8SK3522q2H6CTCeMdzrgPI7XH2uHdNN-UtWRlBbEEKessWsB1UN3n2PYZFKvstrBdAq-ZtqIPAJWd6DlQMrCK5PzC6PJaYuso_PYrWVEynxATi4ihbeXWbr6-KmYQGnEphicWAQoEA_Kmd1zP0eMYoOH2vSgb65y185H24RmGlCgBMyGC7H6dy1kyhOEySNc_HKjH2doGIJH-NNgPdV6SMDBbKXIZGK5ZtoRonCe4wUYLc-SRW6bMEZEOx9jBARoADAezXxOniWY_iQ63ttaDnWvFpbYmWp7Cd1OnIhjaZT=s100-no) 30 round;
+                border: 7px solid transparent;
+            }
+            
             #padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}
             
             #fixed-position-example {
@@ -219,6 +226,22 @@
                 width: 634px;
             }
             
+            #button-visual-example {
+                border: 3px solid rgb(37, 9, 219);
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(255, 0, 0);
+                background-color: transparent;
+                cursor: pointer;
+                transition: 0.8s;
+                border-radius: 20px;
+            }
+            
+            #button-visual-example:hover {
+                background-color: rgb(37, 9, 219);
+            }
+            
         </style>
     </head>
     <body>
@@ -317,6 +340,8 @@
 
 <p>show special characters code: &lt; = &amp;lt; &gt; = &ampgt; &amp; = &amp;amp;</p>
 
+<button>button</button>
+
 <!-- End of HTML -->
 
 <h1 id="pseudo-class-examples">CSS:</h1>
@@ -399,6 +424,8 @@
 
 <p>^table code: .table-border-example {border: 2px solid rgb(15, 94, 70);}, html table code: th class="table-border-example", td class="table-border-example", table class="table-border-example"</p>
 
+<p id="border-image-example">#border-image-example {border: 10px solid transparent; padding: 10px; border-image: url() 30 round; border: 7px solid transparent;}</p>
+
 <p id="padding-example">#padding-example {border: 7px ridge rgb(65, 191, 219); padding: 20px;}</p>
 
 <a href="#internal-link-example" id="fixed-position-example">To the top</a>
@@ -453,6 +480,10 @@
 <p>favicon code: (in head tag) link rel="icon" href=""</p>
 
 <p id="gradient-example">#gradient-example {background-image: linear-gradient(to right, red, yellow, orange); width: 634px;}</p>
+
+<button id="button-visual-example">button</button>
+
+<p>^button code: #button-visual-example {border: 3px solid rgb(37, 9, 219); padding: 10px; font-size: 20px; font-weight: bold; color: rgb(255, 0, 0); background-color: transparent; cursor: pointer; transition: 0.8s; border-radius: 20px;}<br>#button-visual-example:hover {background-color: rgb(37, 9, 219);}</p>
 
 <!-- End of CSS -->
 
