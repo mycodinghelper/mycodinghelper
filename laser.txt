@@ -60,16 +60,4 @@ fcb({
 			"author_id": "54998714@N07",
 			"tags": "lasercat laser cat blackcat 3leggedcat kitty"
 	   }
-	   {
-			"title": "Laser Cat",
-			"link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgiCByPX4OPJ15G52t774xwMPdfc6j42UgJusmkiWOrev890x",
-			"media": {"m":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgiCByPX4OPJ15G52t774xwMPdfc6j42UgJusmkiWOrev890x"},
-			"date_taken": "2018-09-10T19:33:42-08:00",
-			"description": " <p><a href=\"https:\/\/www.flickr.com\/people\/g2k_photo\/\">G2K PHOTO<\/a> posted a photo:<\/p> <p><a href=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgiCByPX4OPJ15G52t774xwMPdfc6j42UgJusmkiWOrev890x" title=\"Laser Cat\"><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgiCByPX4OPJ15G52t774xwMPdfc6j42UgJusmkiWOrev890x" width=\"240\" height=\"160\" alt=\"Laser Cat\" \/><\/a><\/p> <p>Playing with the 3 legged black cat and a laser<\/p>",
-			"published": "2018-09-11T05:20:49Z",
-			"author": "nobody@flickr.com (\"G2K PHOTO\")",
-			"author_id": "54998714@N07",
-			"tags": "lasercat laser cat blackcat 3leggedcat kitty"
-	   }
-        ]
 })
